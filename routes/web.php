@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/payment/add-funds/paypal', 'PaymentController@payWithpaypal')->name('paywithpaypal');
+
+Route::get('/payment/add-funds/paypal/status', 'PaymentController@getPaymentStatus')->name('status');
+
