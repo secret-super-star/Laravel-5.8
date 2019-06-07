@@ -23,3 +23,6 @@ Route::get('/payment/add-funds/paypal', 'PaymentController@payWithpaypal')->name
 
 Route::get('/payment/add-funds/paypal/status', 'PaymentController@getPaymentStatus')->name('status');
 
+Route::get('/checkip' , 'CheckIpController@index')->name('checkip');
+
+Route::get('/send_mail' , 'SendmailController@send_mail')->name('send_mail');

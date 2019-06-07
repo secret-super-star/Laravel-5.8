@@ -19,4 +19,6 @@
     <main-component></main-component>
 </div>
 
+<a href="{{ route('send_mail') }}">Send Mail</a>
+
 @endsection

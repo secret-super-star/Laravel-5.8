@@ -166,6 +166,10 @@ return [
          * Package Service Providers...
          */
 
+        Midnite81\GeoLocation\GeoLocationServiceProvider::class,
+
+        Spatie\Geocoder\GeocoderServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -225,6 +229,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'GeoLocation' => Midnite81\GeoLocation\Facades\GeoLocation::class,
+        'Geocoder' => Spatie\Geocoder\Facades\Geocoder::class,
 
     ],
 
